@@ -1,18 +1,13 @@
-# create-svelte
+# My Portfolio Page
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This portfolio is a personal project built with Svelte and Tailwind CSS to showcase my skills and experience as a web developer, particularly passionate about Front-End development (especially React!) 💻
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- Built with Svelte: Utilizing the power of Svelte for a performant and reactive user interface.
+- Tailwind CSS for Styling: Tailwind's utility-first approach provides a clean and efficient way to style the portfolio.
+- Minimalist Design: The focus is on clarity and simplicity, letting your projects and skills shine.
+- Smooth Transitions: Subtle animations enhance the overall user experience. GSAP and Swiper.js really help me a lot
 
 ## Developing
 

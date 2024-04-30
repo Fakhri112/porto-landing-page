@@ -38,7 +38,7 @@
 	/>
 </svelte:head>
 
-<div class="h-screen p-4 pt-8 overflow-auto flex flex-col relative">
+<div class="h-screen p-4 md:pt-8 pt-10 overflow-auto flex flex-col relative">
 	<NavbarDesktop />
 	<NavbarMobile bind:darkMode />
 	<div

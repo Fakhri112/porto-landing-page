@@ -9,7 +9,7 @@
 		<div tabindex="0" role="button" class="">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="h-5 w-5"
+				class="h-8 w-8"
 				fill="none"
 				viewBox="0 0 24 24"
 				stroke="currentColor"
@@ -24,7 +24,7 @@
 		<ul
 			tabindex="0"
 			class="menu menu-sm dropdown-content z-[1] grid grid-cols-2 gap-2 grid-rows-3
-				 shadow bg-base-100 border border-neutral mt-1 w-[calc(100%+1rem)]"
+				 shadow bg-base-100 border border-neutral w-[calc(100%+1.2rem)]"
 		>
 			<a href="#home">Home</a>
 			<a href="#about">About</a>
@@ -36,9 +36,9 @@
 	</div>
 	<button on:click={() => (darkMode = !darkMode)}>
 		{#if darkMode}
-			<i class="bi bi-brightness-high text-lg mx-[1px]"></i>
+			<i class="bi bi-brightness-high text-xl mx-[1px]"></i>
 		{:else}
-			<i class="bi bi-moon-stars-fill"></i>
+			<i class="bi bi-moon-stars-fill text-xl"></i>
 		{/if}
 	</button>
 </div>
