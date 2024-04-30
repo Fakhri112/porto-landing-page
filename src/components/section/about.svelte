@@ -2,6 +2,7 @@
 	import { onMount } from "svelte";
 	import gsap from "gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+	import unesa from "$lib/image/unesa.jfif";
 
 	onMount(() => {
 		const profilePic = gsap.utils.toArray("#profile-pic");
@@ -45,7 +46,7 @@
 	});
 </script>
 
-<div class="hero md:h-full h-auto my-9 pb-2" id="about">
+<div class="hero h-auto md:min-h-full my-9" id="about">
 	<div class="hero-content">
 		<div class="text-justify md:pe-9">
 			<h1
@@ -79,6 +80,25 @@
 				diverse projects using cutting-edge technologies. Experience and
 				adaptation with latest technology is really important for me.
 			</p>
+			<div class="mt-4" id="about-me-content">
+				<p
+					class="text-xl mb-2 font-semibold border border-transparent border-b-neutral"
+				>
+					Education
+				</p>
+				<div class="flex gap-x-2 items-center">
+					<img src={unesa} alt="" class="rounded-sm h-24 sm:h-16 self-start" />
+					<div class="w-full">
+						<div class="w-full flex justify-between">
+							<p class="font-semibold">Universitas Negeri Surabaya</p>
+							<span class="sm:block hidden">(2019 - 2023)</span>
+						</div>
+						<span class="block sm:hidden">(2019 - 2023)</span>
+						<p>S1 Teknik Informatika</p>
+						<p>Grade: 3.75</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="md:block hidden">
 			<enhanced:img
