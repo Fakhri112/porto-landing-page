@@ -1,0 +1,121 @@
+let webProjectList = [
+	{
+		name: "Yahoot!",
+		description: "A live quiz interactive game like kahoot! and quizzes",
+		link: "https://yahoot.serv00.net",
+		github: "https://github.com/Fakhri112/yahoot",
+		image: "/yahoot.png",
+		tech: ["Laravel", "React", "Tailwind", "Peerjs", "PostgreSQL"],
+	},
+	{
+		name: "BlueNote",
+		description: "A ColorNote Desktop Clone",
+		link: "https://bluenote.vercel.app",
+		github: "https://github.com/Fakhri112/bluenote",
+		image: "/bluenote.png",
+		tech: ["Next.js", "Firebase", "Bootstrap"],
+	},
+	{
+		name: "Stufast.id",
+		description:
+			"Learning Management System from Fullstack Developer Internship",
+		link: "https://stufast.id",
+		image: "/stufast.png",
+		tech: ["Codeigniter 4", "Bootstrap", "jQuery", "MySQL"],
+	},
+	{
+		name: "Lezhealty",
+		description: "Web blog project for Web Programming Subject",
+		link: "https://lezhealty.42web.io",
+		github: "https://github.com/Fakhri112/lezhealty",
+		image: "/lezhealty.png",
+		tech: ["Pure PHP", "Bootstrap", "jQuery", "MySQL"],
+	},
+	{
+		name: "Random Quote Generator",
+		description: "A FreeCodeCamp Front-End Development Project",
+		link: "https://fakhri112.github.io/fc-random-quote-generator/",
+		github: "https://github.com/Fakhri112/fc-random-quote-generator",
+		image: "/random-quote-machine.png",
+		tech: ["React", "Typescript", "Vite", "Tailwind"],
+	},
+	{
+		name: "Markdown Previewer",
+		description: "A FreeCodeCamp Front-End Development Project",
+		link: "https://fakhri112.github.io/fc-markdown-previewer/",
+		github: "https://github.com/Fakhri112/fc-markdown-previewer",
+		image: "/markdown-previewer.png",
+		tech: ["React", "Typescript", "Vite", "Tailwind"],
+	},
+	{
+		name: "Drum Machine",
+		description: "A FreeCodeCamp Front-End Development Project",
+		link: "https://fakhri112.github.io/fc-drum-machine/",
+		github: "https://github.com/Fakhri112/fc-drum-machine",
+		image: "/drum-machine.png",
+		tech: ["React", "Typescript", "Vite", "Tailwind"],
+	},
+	{
+		name: "Calculator",
+		description: "A FreeCodeCamp Front-End Development Project",
+		link: "https://fakhri112.github.io/fc-calculator/",
+		github: "https://github.com/Fakhri112/fc-calculator",
+		image: "/calculator.png",
+		tech: ["React", "Typescript", "Vite", "Tailwind"],
+	},
+	{
+		name: "Pomodoro Clock",
+		description: "A FreeCodeCamp Front-End Development Project",
+		link: "https://fakhri112.github.io/fc-pomodoro-clock/",
+		github: "https://github.com/Fakhri112/fc-pomodoro-clock",
+		image: "/pomodoro-clock.png",
+		tech: ["React", "Typescript", "Vite", "Tailwind"],
+	},
+];
+
+let apiProjectList = [
+	{
+		name: "Exercise Tracker",
+		description: "A FreeCodeCamp Back-End Development Project",
+		github: "https://github.com/Fakhri112/freecodecamp-backend-project",
+		image: "/api/exercise-tracker.png",
+		tech: ["Node.js", "Express.js", "MongoDB"],
+	},
+	{
+		name: "File Metadata",
+		description: "A FreeCodeCamp Back-End Development Project",
+		github: "https://github.com/Fakhri112/freecodecamp-backend-project",
+		image: "/api/file-metadata.png",
+		tech: ["Node.js", "Express.js"],
+	},
+	{
+		name: "URL Shortener",
+		description: "A FreeCodeCamp Back-End Development Project",
+		github: "https://github.com/Fakhri112/freecodecamp-backend-project",
+		image: "/api/shortlink.png",
+		tech: ["Node.js", "Express.js", "MongoDB"],
+	},
+	{
+		name: "Sudoku Solver",
+		description: "A FreeCodeCamp Quality Assurance Development Project",
+		github: "https://github.com/Fakhri112/freecodecamp-qa-sudoku-solver",
+		image: "/api/sudoku-solver.png",
+		tech: ["Node.js", "Express.js", "Chai", "Mocca"],
+	},
+	{
+		name: "Personal Library",
+		description: "A FreeCodeCamp Quality Assurance Development Project",
+		github: "https://github.com/Fakhri112/freecodecamp-qa-personal-library",
+		image: "/api/personal-library.png",
+		tech: ["Node.js", "Express.js", "MongoDB", "Chai", "Mocca"],
+	},
+	{
+		name: "Issue tracker",
+		description: "A FreeCodeCamp Quality Assurance Development Project",
+		github: "https://github.com/Fakhri112/freecodecamp-qa-issue-tracker",
+		image: "/api/issue-tracker.png",
+		tech: ["Node.js", "Express.js", "MongoDB", "Chai", "Mocca"],
+	},
+];
+
+export { webProjectList, apiProjectList };
