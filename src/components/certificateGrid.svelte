@@ -39,7 +39,7 @@
 					>?</swiper-slide
 				>
 				<swiper-slide class="border border-black rounded">
-					<img src="src/lib/image/cat.jpg" alt="" />
+					<img src={image} alt="" />
 				</swiper-slide>
 			</swiper-container>
 		</button>

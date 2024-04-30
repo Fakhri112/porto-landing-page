@@ -2,7 +2,6 @@
 	import { apiProjectList, webProjectList } from "$lib/projects";
 	import { onMount } from "svelte";
 	import ProjectCard from "./projectCard.svelte";
-	import { register } from "swiper/element";
 	import gsap from "gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 

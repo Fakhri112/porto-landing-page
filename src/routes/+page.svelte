@@ -10,6 +10,10 @@
 	import "../app.css";
 </script>
 
+<svelte:head>
+	<title>My Portfolio</title>
+</svelte:head>
+
 <Layout>
 	<Home />
 	<AboutMe />
