@@ -6,7 +6,7 @@ This portfolio is a personal project built with Svelte and Tailwind CSS to showc
 
 - Built with Svelte: Utilizing the power of Svelte for a performant and reactive user interface.
 - Tailwind CSS for Styling: Tailwind's utility-first approach provides a clean and efficient way to style the portfolio.
-- Minimalist Design: The focus is on clarity and simplicity, letting your projects and skills shine.
+- Minimalist Design: The focus is on clarity and simplicity, letting my projects and skills shine.
 - Smooth Transitions: Subtle animations enhance the overall user experience. GSAP and Swiper.js really help me a lot
 
 ## Developing
