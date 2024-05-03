@@ -58,7 +58,7 @@
 					class="flex flex-col text-center md:text-start"
 					id="project-title-caption"
 				>
-					<h1 class="text-5xl font-bold">Project</h1>
+					<h1 class="text-4xl sm:text-5xl font-bold">Project</h1>
 					<p class="py-2">
 						Project speak louder than just including your skills to CV
 					</p>

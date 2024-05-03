@@ -17,7 +17,7 @@
 	}
 
 	onMount(() => {
-		bodyElement = document.body;
+		bodyElement = document.querySelector("html") as HTMLElement;
 		register();
 		ScrollTrigger.refresh();
 	});

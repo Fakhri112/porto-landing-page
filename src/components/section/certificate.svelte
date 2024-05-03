@@ -56,7 +56,10 @@
 	<div class="hero-content flex lg:flex-row flex-col w-full h-full py-6">
 		<div class="lg:w-[75%] w-full flex lg:justify-between justify-center">
 			<div class="flex flex-col items-center">
-				<h1 class="text-5xl font-bold" id="certificate-title-caption">
+				<h1
+					class="text-4xl sm:text-5xl font-bold"
+					id="certificate-title-caption"
+				>
 					Certificate
 				</h1>
 				<p class="py-2" id="certificate-title-caption">

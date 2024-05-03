@@ -33,9 +33,9 @@
 				{/if}
 			</div>
 		</figure>
-		<div class="card-body py-3 px-4 md:h-48 h-44">
-			<h2 class="card-title">{name}</h2>
-			<p>{description}</p>
+		<div class="card-body py-3 px-4 md:h-48 h-[185px]">
+			<h2 class="md:card-title font-semibold">{name}</h2>
+			<p class="max-sm:text-md">{description}</p>
 			<div class="card-actions">
 				{#each tech as item}
 					<div class="badge badge-outline">

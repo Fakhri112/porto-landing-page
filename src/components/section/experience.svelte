@@ -48,7 +48,7 @@
 <div class="hero bg-base-200" id="experience">
 	<div class="hero-content mt-20 mb-10 sm:my-20 flex flex-col">
 		<div class="flex items-center flex-col">
-			<h1 class="text-5xl font-bold" id="experience-title-header">
+			<h1 class="text-4xl font-bold sm:text-5xl" id="experience-title-header">
 				Experience
 			</h1>
 			<p class="py-5" id="experience-title-header">

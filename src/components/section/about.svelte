@@ -50,7 +50,7 @@
 	<div class="hero-content">
 		<div class="text-justify md:pe-9">
 			<h1
-				class="text-5xl font-bold text-center md:text-start"
+				class="text-4xl sm:text-5xl font-bold text-center md:text-start"
 				id="about-me-content"
 			>
 				About Me
@@ -87,15 +87,17 @@
 					Education
 				</p>
 				<div class="flex gap-x-2 items-center">
-					<img src={unesa} alt="" class="rounded-sm h-24 sm:h-16 self-start" />
+					<img src={unesa} alt="" class="rounded-sm h-20 sm:h-16 self-start" />
 					<div class="w-full">
 						<div class="w-full flex justify-between">
-							<p class="font-semibold">Universitas Negeri Surabaya</p>
-							<span class="sm:block hidden">(2019 - 2023)</span>
+							<p class="font-semibold max-sm:text-sm">
+								Universitas Negeri Surabaya
+							</p>
+							<span class="sm:block hidden max-sm:text-sm">(2019 - 2023)</span>
 						</div>
-						<span class="block sm:hidden">(2019 - 2023)</span>
-						<p>S1 Teknik Informatika</p>
-						<p>Grade: 3.75</p>
+						<span class="block sm:hidden max-sm:text-sm">(2019 - 2023)</span>
+						<p class="max-sm:text-sm">S1 Teknik Informatika</p>
+						<p class="max-sm:text-sm">Grade: 3.75</p>
 					</div>
 				</div>
 			</div>

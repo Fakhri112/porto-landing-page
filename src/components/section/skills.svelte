@@ -63,7 +63,9 @@
 >
 	<div class="hero-content mb-20 flex flex-col w-full">
 		<div class="flex flex-col items-center">
-			<h1 class="text-5xl font-bold" id="skills-header-caption">Skills</h1>
+			<h1 class="text-4xl sm:text-5xl font-bold" id="skills-header-caption">
+				Skills
+			</h1>
 			<p class="py-2 text-center" id="skills-header-caption">
 				While I'm skilled in these areas, I'm constantly on the lookout for
 				exciting new tech to explore.

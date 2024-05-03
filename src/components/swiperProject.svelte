@@ -37,9 +37,10 @@
 		});
 	});
 	$: innerWidth = 0;
+	$: innerHeight = 0;
 </script>
 
-<svelte:window bind:innerWidth />
+<svelte:window bind:innerWidth bind:innerHeight />
 <div id="swiper-container" class="w-[95%]">
 	{#if webProject}
 		<swiper-container
