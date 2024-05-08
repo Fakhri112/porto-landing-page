@@ -41,7 +41,7 @@
 				<div class="mt-3 gap-2 sm:gap-3 flex justify-center w-full">
 					<a
 						target="_blank"
-						href="https://www.instagram.com/fakhriee_ali/"
+						href="https://www.instagram.com/fakhriali112/"
 						class="btn rounded-md border-slate-100 sm:border-transparent hover:border hover:border-slate-100 px-3 sm:px-4"
 					>
 						<i class="bi bi-instagram text-xl"></i>

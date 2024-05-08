@@ -18,9 +18,17 @@ import issueTracker from '$lib/image/project-img/api/issue-tracker.png';
 
 let webProjectList = [
 	{
+		name: "Pomodoro Clock",
+		description: "A FreeCodeCamp Front-End Development Project",
+		link: "https://fakhri112.github.io/fc-pomodoro-clock/",
+		github: "https://github.com/Fakhri112/fc-pomodoro-clock",
+		image: pomodoroClock,
+		tech: ["React", "Typescript", "Vite", "Tailwind"],
+	},
+	{
 		name: "Yahoot!",
 		description: "A live quiz interactive game like kahoot! and quizzes",
-		link: "https://yahoot.serv00.net",
+		link: "https://yahootgame.c1.is/",
 		github: "https://github.com/Fakhri112/yahoot",
 		image: yahoot,
 		tech: ["Laravel", "React", "Tailwind", "Peerjs", "PostgreSQL"],
@@ -88,15 +96,7 @@ let webProjectList = [
 		github: "https://github.com/Fakhri112/fc-calculator",
 		image: calculator,
 		tech: ["React", "Typescript", "Vite", "Tailwind"],
-	},
-	{
-		name: "Pomodoro Clock",
-		description: "A FreeCodeCamp Front-End Development Project",
-		link: "https://fakhri112.github.io/fc-pomodoro-clock/",
-		github: "https://github.com/Fakhri112/fc-pomodoro-clock",
-		image: pomodoroClock,
-		tech: ["React", "Typescript", "Vite", "Tailwind"],
-	},
+	},	
 ];
 
 let apiProjectList = [
