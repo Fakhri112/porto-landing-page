@@ -71,13 +71,13 @@
 				</p>
 				<p></p>
 				<ol class="list-decimal px-7 text-justify">
-					<li>Learn about critical thinking, logic, and language</li>
-					<li>Learn about philosophy, the universe, and human evolution</li>
+					<li>Learned critical thinking, logic, and language</li>
+					<li>Learned philosophy, the universe, and human evolution</li>
 					<li>
-						Learn about WordPress and how to build e-commerce websites with
+						Learned WordPress CMS and how to build e-commerce websites with
 						WordPress
 					</li>
-					<li>Learn about cPanel and web hosting</li>
+					<li>Learned cPanel and web hosting</li>
 				</ol>
 			</div>
 			<div class="bg-base-100 border-slate-100 border shadow-xl rounded p-2">
@@ -92,16 +92,16 @@
 					Aug 2022 - Dec 2022
 				</p>
 				<ol class="list-decimal px-7 text-justify">
-					<li>Build learning management system platform (stufast.id)</li>
+					<li>Builded learning management system platform (stufast.id)</li>
 					<li>
-						Implement UI/UX mockups for static pages (e.g., cart & checkout,
+						Implemented UI/UX mockups for static pages (e.g., cart & checkout,
 						course detail, etc.)
 					</li>
 					<li>
-						Integrate APIs to the admin page for course and profile management
+						Integrated APIs to the admin page for course and profile management
 					</li>
 					<li>
-						Create HTML emails (e.g., email verification, password reset,
+						Designed HTML emails (e.g., email verification, password reset,
 						invoice)
 					</li>
 				</ol>
