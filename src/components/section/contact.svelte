@@ -48,7 +48,7 @@
 					</a>
 					<a
 						target="_blank"
-						href="https://www.linkedin.com/in/muhammad-fakhri-ali-as-shuffi-83952a246/"
+						href="https://www.linkedin.com/in/fakhriali112/"
 						class="btn rounded-md border-slate-100 sm:border-transparent hover:border hover:border-slate-100 px-3 sm:px-4"
 					>
 						<i class="bi bi-linkedin text-xl"></i>
