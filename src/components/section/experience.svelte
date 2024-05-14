@@ -98,7 +98,8 @@
 						course detail, etc.)
 					</li>
 					<li>
-						Integrated APIs to the admin page for course and profile management
+						Integrated APIs with the admin page for course and profile
+						management.
 					</li>
 					<li>
 						Designed HTML emails (e.g., email verification, password reset,

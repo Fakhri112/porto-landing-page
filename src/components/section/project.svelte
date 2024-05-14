@@ -48,7 +48,7 @@
 	});
 </script>
 
-<div class="flex flex-col md:mb-28 justify-center items-center">
+<div class="flex flex-col md:mb-20 justify-center items-center">
 	<div class="hero bg-base-100 mt-5 sm:mb-5 mb-1 pt-4" id="project">
 		<div class="hero-content flex flex-col w-full">
 			<div

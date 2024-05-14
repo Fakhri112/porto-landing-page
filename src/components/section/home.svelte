@@ -1,3 +1,7 @@
+<script>
+	import cv from "$lib/cv_fakhri.pdf";
+</script>
+
 <div class="hero h-full w-full bg-base-200" id="home">
 	<div class="px-4">
 		<p class="text-xl md:text-2xl md:text-start">Hello 👋 my name is</p>
@@ -8,6 +12,6 @@
 			Curious explorer of web development, building exceptional experiences with
 			React
 		</p>
-		<button class="btn btn-outline">Download CV</button>
+		<a href={cv} class="btn btn-outline">Download CV</a>
 	</div>
 </div>
