@@ -71,13 +71,13 @@
 				</p>
 				<p></p>
 				<ol class="list-decimal px-7 text-justify">
-					<li>Learned critical thinking, logic, and language</li>
-					<li>Learned philosophy, the universe, and human evolution</li>
-					<li>
-						Learned WordPress CMS and how to build e-commerce websites with
-						WordPress
-					</li>
-					<li>Learned cPanel and web hosting</li>
+					<li> Learned critical thinking, logic, and languange skills</li>
+					<li> Learned WordPress and related tools such as Elementor Builder and theme settings.</li>
+					<li> Learned and practiced SEO using the YoastSeo plugin.</li>
+					<li> Built an article, CV, and company profile website.</li>
+					<li> Built an online store website with WooCommerce.</li>
+					<li> Learned CPanel to manage hosting.</li>
+					<li> Learned various WordPress plugins</li>
 				</ol>
 			</div>
 			<div class="bg-base-100 border-slate-100 border shadow-xl rounded p-2">
@@ -92,17 +92,16 @@
 					Aug 2022 - Dec 2022
 				</p>
 				<ol class="list-decimal px-7 text-justify">
-					<li>Builded learning management system platform (stufast.id)</li>
+					<li>Built learning management system platform (stufast.id)</li>
 					<li>
 						Implemented UI/UX mockups for static pages (e.g., cart & checkout,
 						course detail, etc.)
 					</li>
 					<li>
-						Integrated APIs with the admin page for course and profile
-						management.
+						Integrated APIs to admin page for managing course and profile
 					</li>
 					<li>
-						Designed HTML emails (e.g., email verification, password reset,
+						Designed and Implemented HTML emails (e.g., email verification, password reset,
 						invoice)
 					</li>
 				</ol>

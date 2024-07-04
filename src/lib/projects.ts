@@ -1,20 +1,20 @@
 // Import project images (assuming they are in the `public` directory)
-import yahoot from '$lib/image/project-img/yahoot.png';
-import bluenote from '$lib/image/project-img/bluenote.png';
-import stufast from '$lib/image/project-img/stufast.png';
-import lezhealty from '$lib/image/project-img/lezhealty.png';
-import landingPage from '$lib/image/project-img/landing-page.png';
-import randomQuoteMachine from '$lib/image/project-img/random-quote-machine.png';
-import markdownPreviewer from '$lib/image/project-img/markdown-previewer.png';
-import drumMachine from '$lib/image/project-img/drum-machine.png';
-import calculator from '$lib/image/project-img/calculator.png';
-import pomodoroClock from '$lib/image/project-img/pomodoro-clock.png';
-import exerciseTracker from '$lib/image/project-img/api/exercise-tracker.png';
-import fileMetadata from '$lib/image/project-img/api/file-metadata.png';
-import shortlink from '$lib/image/project-img/api/shortlink.png';
-import sudokuSolver from '$lib/image/project-img/api/sudoku-solver.png';
-import personalLibrary from '$lib/image/project-img/api/personal-library.png';
-import issueTracker from '$lib/image/project-img/api/issue-tracker.png';
+import yahoot from "$lib/image/project-img/yahoot.png";
+import bluenote from "$lib/image/project-img/bluenote.png";
+import stufast from "$lib/image/project-img/stufast.png";
+import lezhealty from "$lib/image/project-img/lezhealty.png";
+import landingPage from "$lib/image/project-img/landing-page.png";
+import spaceTourism from "$lib/image/project-img/space-tourism.png";
+import markdownPreviewer from "$lib/image/project-img/markdown-previewer.png";
+import drumMachine from "$lib/image/project-img/drum-machine.png";
+import calculator from "$lib/image/project-img/calculator.png";
+import pomodoroClock from "$lib/image/project-img/pomodoro-clock.png";
+import exerciseTracker from "$lib/image/project-img/api/exercise-tracker.png";
+import fileMetadata from "$lib/image/project-img/api/file-metadata.png";
+import shortlink from "$lib/image/project-img/api/shortlink.png";
+import sudokuSolver from "$lib/image/project-img/api/sudoku-solver.png";
+import personalLibrary from "$lib/image/project-img/api/personal-library.png";
+import issueTracker from "$lib/image/project-img/api/issue-tracker.png";
 
 let webProjectList = [
 	{
@@ -66,12 +66,12 @@ let webProjectList = [
 		tech: ["Svelte", "TypeScript", "Tailwind", "Daisy UI"],
 	},
 	{
-		name: "Random Quote Generator",
-		description: "A FreeCodeCamp Front-End Development Project",
-		link: "https://fakhri112.github.io/fc-random-quote-generator/",
-		github: "https://github.com/Fakhri112/fc-random-quote-generator",
-		image: randomQuoteMachine,
-		tech: ["React", "Typescript", "Vite", "Tailwind"],
+		name: "Space Tourism Website",
+		description: "A landing page challenge provided by frontendmentor.io",
+		link: "https://fakhri112.github.io/space-tourism-website",
+		github: "https://github.com/Fakhri112/space-tourism-website",
+		image: spaceTourism,
+		tech: ["Vue 3", "Vue Router", "TailwindCSS"],
 	},
 	{
 		name: "Markdown Previewer",
@@ -96,7 +96,7 @@ let webProjectList = [
 		github: "https://github.com/Fakhri112/fc-calculator",
 		image: calculator,
 		tech: ["React", "Typescript", "Vite", "Tailwind"],
-	},	
+	},
 ];
 
 let apiProjectList = [
@@ -125,7 +125,7 @@ let apiProjectList = [
 		name: "Sudoku Solver",
 		description: "A FreeCodeCamp Quality Assurance Development Project",
 		github: "https://github.com/Fakhri112/freecodecamp-qa-sudoku-solver",
-		image:sudokuSolver,
+		image: sudokuSolver,
 		tech: ["Node.js", "Express.js", "Chai", "Mocca"],
 	},
 	{
