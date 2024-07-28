@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { certificateList } from "$lib/certificates";
-	let certifTarget = "";
+	export let certifTarget = "";
 	const handleChangeCertifTarget = (e: MouseEvent) => {
 		e.preventDefault();
 		e.stopImmediatePropagation();
@@ -50,7 +50,7 @@
 				: ""}
 			class={`${
 				certifTarget == ""
-					? `hover:brightness-75 col-span-1 row-span-1 opacity-0`
+					? `hover:brightness-75 shadow-xl col-span-1 row-span-1 opacity-0 h-full`
 					: certifTarget != id && certifTarget != ""
 						? "hidden"
 						: "col-span-3 row-span-3 swing-in-top-fwd "
@@ -58,7 +58,7 @@
 			{id}
 			on:click={handleChangeCertifTarget}
 		>
-			<img src={image} alt="certificate" id={index + "a"} class="rounded" />
+			<img src={image} alt="certificate" id={index + "a"} class="rounded  w-full" />
 			{#if credentialLink}
 				<div
 					class="w-full flex md:justify-center py-2 md:justify-center lg:justify-end absolute lg:right-0 lg:-top-10"

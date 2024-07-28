@@ -46,7 +46,7 @@
 </script>
 
 <div class="hero bg-base-200" id="experience">
-	<div class="hero-content mt-20 mb-10 sm:my-20 flex flex-col">
+	<div class="hero-content sm:max-w-[95%] bg-base-200 rounded-md mt-20 mb-10 sm:my-20 flex flex-col">
 		<div class="flex items-center flex-col">
 			<h1 class="text-4xl font-bold sm:text-5xl" id="experience-title-header">
 				Experience
@@ -56,16 +56,16 @@
 			</p>
 		</div>
 		<div class="flex flex-col w-full lg:flex-row gap-2" id="experience-content">
-			<div class="bg-base-100 border-slate-100 border shadow-xl rounded p-2">
+			<div class="bg-base-100 w-full border border-base-content shadow-xl rounded p-2">
 				<p class="font-semibold text-lg">
 					Studi Independen: Web Development (Wordpress)
 				</p>
 				<div>
 					<p>Zenius</p>
-					<enhanced:img src="$lib/image/zenius.webp" class="w-16" />
+					<enhanced:img src="$lib/image/zenius.webp" class="w-16 lg:w-[10vh]" />
 				</div>
 				<p
-					class="text-sm px-2 py-1 mb-2 rounded w-60 mt-2 border bg-base-100 border-neutral-content border-2"
+					class="text-sm px-2 py-1 mb-2 rounded w-60 mt-2 bg-base-100  border  border-neutral "
 				>
 					February 2022 - July 2022
 				</p>
@@ -80,19 +80,20 @@
 					<li> Learned various WordPress plugins</li>
 				</ol>
 			</div>
-			<div class="bg-base-100 border-slate-100 border shadow-xl rounded p-2">
+			<div class="bg-base-100 w-full border border-base-content shadow-xl rounded p-2">
 				<p class="font-semibold text-lg">Fullstack Developer Internship</p>
 				<div>
 					<p>PT Baracipta Esa Engineering</p>
-					<enhanced:img src="$lib/image/beecons.jpg" class="w-16" />
+					<enhanced:img src="$lib/image/beecons.jpg" class="w-16 lg:w-[10vh]" />
 				</div>
 				<p
-					class="text-sm px-2 py-1 mb-2 rounded w-60 mt-2 border bg-base-100 border-neutral-content border-2"
+					class="text-sm px-2 py-1 mb-2 rounded w-60 mt-2 bg-base-100 border  border-neutral "
 				>
 					Aug 2022 - Dec 2022
 				</p>
 				<ol class="list-decimal px-7 text-justify">
-					<li>Built learning management system platform (stufast.id)</li>
+					<li>Built learning management system platform (stufast.id) using Codeigniter 4</li>
+					<li>Actively participate in the development team's efforts to create an online learning platform system from scratch.</li>
 					<li>
 						Implemented UI/UX mockups for static pages (e.g., cart & checkout,
 						course detail, etc.)

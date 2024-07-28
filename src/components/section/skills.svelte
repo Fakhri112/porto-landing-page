@@ -58,11 +58,11 @@
 </script>
 
 <div
-	class="hero bg-base-200 h-full sm:h-auto md:pb-16 lg:pb-8 lg:pt-10"
+	class="hero bg-base-200 lg:px-48 h-full sm:h-auto md:pb-16 lg:pb-8 lg:pt-10"
 	id="skills"
 >
-	<div class="hero-content mb-20 flex flex-col w-full">
-		<div class="flex flex-col items-center">
+	<div class="hero-content w-full rounded-md  mb-20 flex flex-col w-full">
+		<div class="flex flex-col items-center ">
 			<h1 class="text-4xl sm:text-5xl font-bold" id="skills-header-caption">
 				Skills
 			</h1>
@@ -72,7 +72,7 @@
 			</p>
 		</div>
 		<div
-			class="grid md:grid-cols-5 grid-cols-4 justify-items-center border bg-base-100 border-black rounded-md md:w-[80%] w-[95%] gap-y-3 py-3"
+			class="shadow-xl items-center justify-center grid lg:h-[60vh] md:grid-cols-5 grid-cols-4 justify-items-center  border border-base-content bg-base-100  rounded-md lg:w-[100vh] md:w-[100%] w-[95%] gap-y-3 py-3"
 		>
 			{#each techIcon as { classIcon, name }}
 				<TechIcon {name} {classIcon} />

@@ -11,6 +11,14 @@ export default {
 	},
 	plugins: [require("daisyui")],
 	daisyui: {
-		themes: ["bumblebee", "forest"],
+		themes: [
+			"bumblebee",
+			{
+				forest: {
+					...require("daisyui/src/theming/themes")["forest"],
+					neutral: "#256250",
+				},
+			},
+		],
 	},
 };

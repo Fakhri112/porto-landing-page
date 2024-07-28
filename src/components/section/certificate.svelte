@@ -4,7 +4,7 @@
 	import CertificateGrid from "../certificateGrid.svelte";
 	import gsap from "gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
+	let certifTarget = "";
 	onMount(() => {
 		const certificateTitleCaption = gsap.utils.toArray(
 			"#certificate-title-caption",
@@ -50,11 +50,11 @@
 </script>
 
 <div
-	class="hero sm:min-h-[calc(100vh)] sm:h-auto h-[80%] mb-40 sm:mb-0 bg-base-100"
+	class="hero  sm:min-h-[calc(100vh)] sm:h-auto h-[80%] mb-40 sm:mb-0 bg-base-100"
 	id="certificate"
 >
-	<div class="hero-content flex lg:flex-row flex-col w-full h-full py-6">
-		<div class="lg:w-[75%] w-full flex lg:justify-between justify-center">
+	<div class="hero-content rounded-md  max-w-[95%] px-10 flex lg:flex-row flex-col w-full py-6">
+		<div class="lg:w-[75%] p-2 rounded-md  w-full flex lg:justify-between justify-center">
 			<div class="flex flex-col items-center">
 				<h1
 					class="text-4xl sm:text-5xl font-bold"
@@ -71,11 +71,14 @@
 			<CertificateCard />
 		</div>
 
-		<div
+		<div class="lg:w-full sm:shadow-xl h-full sm:border bg-base-200 border-base-content p-5 rounded-md w-[85%]">
+
+			<div
 			id="certificate-list"
-			class="lg:w-full md:grid hidden w-[85%] gap-4 grid-cols-3 grid-row grid-rows-3"
+			class={`md:grid hidden grid-cols-3 h-full grid-row grid-rows-3 ${certifTarget ? '' : 'gap-4'}`}
 		>
-			<CertificateGrid />
+			<CertificateGrid bind:certifTarget />
+		</div>
 		</div>
 	</div>
 </div>

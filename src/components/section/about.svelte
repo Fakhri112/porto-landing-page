@@ -47,8 +47,8 @@
 </script>
 
 <div class="hero h-auto md:min-h-full my-9" id="about">
-	<div class="hero-content">
-		<div class="text-justify md:pe-9">
+	<div class="hero-content sm:max-w-[95%] shadow-xl rounded-md sm:border border-base-content  ">
+		<div class="text-justify md:pe-9  rounded-md border-base-content sm:p-5">
 			<h1
 				class="text-4xl sm:text-5xl font-bold text-center md:text-start"
 				id="about-me-content"
@@ -59,7 +59,7 @@
 				<enhanced:img
 					id="profile-pic"
 					src="$lib/image/me.jpg"
-					class="max-w-[10em] w-full min-w-[10em] rounded-lg border border-neutral border-2"
+					class="max-w-[10em] w-full min-w-[10em] lg:max-w-[10vh] rounded-lg "
 					alt="An alt text"
 				/>
 			</div>
@@ -68,8 +68,7 @@
 			</p>
 			<p class="py-4" id="about-me-content">
 				I'm a web development enthusiast, excited to learn more about the
-				various tech stacks available. While front-end development, particularly
-				React, piques my interest the most, I'm always open to exploring other
+				various tech stacks available. While front-end development piques my interest the most, I'm always open to exploring other
 				technologies. The question of front-end or back-end development? I love
 				both!
 			</p>
@@ -80,7 +79,7 @@
 				diverse projects using cutting-edge technologies. Experience and
 				adaptation with latest technology is really important for me.
 			</p>
-			<div class="mt-4" id="about-me-content">
+			<div class="mt-6" id="about-me-content">
 				<p
 					class="text-xl mb-2 font-semibold border border-transparent border-b-neutral"
 				>
@@ -97,7 +96,7 @@
 						</div>
 						<span class="block sm:hidden max-sm:text-sm">(2019 - 2023)</span>
 						<p class="max-sm:text-sm">S1 Teknik Informatika</p>
-						<p class="max-sm:text-sm">Grade: 3.75</p>
+						<p class="max-sm:text-sm">GPA: 3.75</p>
 					</div>
 				</div>
 			</div>
@@ -106,7 +105,7 @@
 			<enhanced:img
 				id="profile-pic"
 				src="$lib/image/me.jpg"
-				class="min-w-[15em] w-full max-w-[60em] border rounded lg border-neutral border-2"
+				class="min-w-[15em] w-full max-w-[60em] border rounded lg border-base-content shadow-xl"
 				alt="An alt text"
 			/>
 		</div>

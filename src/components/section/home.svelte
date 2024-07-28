@@ -9,8 +9,8 @@
 			Muhammad Fakhri Ali As Shuffi
 		</h1>
 		<p class="py-6 md:text-start p-1">
-			Curious explorer of web development, building exceptional experiences with
-			React
+			Curious explorer of web development, having exceptional experiences with
+			Frontend Development
 		</p>
 		<a href={cv} class="btn btn-outline">Download CV</a>
 	</div>

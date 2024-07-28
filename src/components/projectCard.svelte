@@ -38,7 +38,7 @@
 			<p class="max-sm:text-md">{description}</p>
 			<div class="card-actions">
 				{#each tech as item}
-					<div class="badge badge-outline">
+					<div class="rounded-lg px-2 text-sm border border-neutral ">
 						{item}
 					</div>
 				{/each}

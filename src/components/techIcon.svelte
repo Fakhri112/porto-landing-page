@@ -13,9 +13,9 @@
 	};
 </script>
 
-<div class="tooltip w-fit border p-1 rounded" id="tech-icon" data-tip={name}>
+<div class="tooltip w-fit border border-neutral p-2 rounded" id="tech-icon" data-tip={name}>
 	<i
-		class={`text-5xl ${classIcon}`}
+		class={`text-4xl lg:text-5xl ${classIcon}`}
 		on:mouseenter={handleIconHover}
 		on:mouseleave={handleIconHoverLeave}
 	></i>

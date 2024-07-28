@@ -42,35 +42,35 @@
 					<a
 						target="_blank"
 						href="https://www.instagram.com/fakhriali112/"
-						class="btn rounded-md border-slate-100 sm:border-transparent hover:border hover:border-slate-100 px-3 sm:px-4"
+						class="btn rounded-md border-neutral sm:border-transparent hover:border hover:border-neutral px-3 sm:px-4"
 					>
 						<i class="bi bi-instagram text-xl"></i>
 					</a>
 					<a
 						target="_blank"
 						href="https://www.linkedin.com/in/fakhriali112/"
-						class="btn rounded-md border-slate-100 sm:border-transparent hover:border hover:border-slate-100 px-3 sm:px-4"
+						class="btn rounded-md border-neutral sm:border-transparent hover:border hover:border-neutral px-3 sm:px-4"
 					>
 						<i class="bi bi-linkedin text-xl"></i>
 					</a>
 					<a
 						target="_blank"
 						href="https://github.com/Fakhri112/"
-						class="btn rounded-md border-slate-100 sm:border-transparent hover:border hover:border-slate-100 px-3 sm:px-4"
+						class="btn rounded-md border-neutral sm:border-transparent hover:border hover:border-neutral px-3 sm:px-4"
 					>
 						<i class="bi bi-github text-xl"></i>
 					</a>
 					<a
 						target="_blank"
 						href="https://wa.me/628970871291"
-						class="btn rounded-md border-slate-100 sm:border-transparent hover:border hover:border-slate-100 px-3 sm:px-4"
+						class="btn rounded-md border-neutral sm:border-transparent hover:border hover:border-neutral px-3 sm:px-4"
 					>
 						<i class="bi bi-whatsapp text-xl"></i>
 					</a>
 					<a
 						target="_blank"
 						href="mailto:fakhriali781@gmail.com"
-						class="btn rounded-md border-slate-100 sm:border-transparent hover:border hover:border-slate-100 px-3 sm:px-4"
+						class="btn rounded-md border-neutral sm:border-transparent hover:border hover:border-neutral px-3 sm:px-4"
 					>
 						<i class="bi bi-envelope text-xl"></i>
 					</a>

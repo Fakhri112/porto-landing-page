@@ -41,12 +41,12 @@
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
-<div id="swiper-container" class="w-[95%]">
+<div id="swiper-container" class="mt-2 px-2 w-[97%]">
 	{#if webProject}
 		<swiper-container
 			id="swiper"
 			class="fade-in-top px-2"
-			slides-per-view={`${innerWidth < 1070 && innerWidth > 855 ? "3" : innerWidth <= 855 && innerWidth > 570 ? "2" : innerWidth <= 570 ? "1" : "4"}`}
+			slides-per-view={`${innerWidth < 1720 && innerWidth > 1070 ? "4" : innerWidth < 1070 && innerWidth > 855 ? "3" : innerWidth <= 855 && innerWidth > 570 ? "2" : innerWidth <= 570 ? "1" : "5"}`}
 			space-between="10"
 			grab-cursor="true"
 			speed="2000"
@@ -64,7 +64,7 @@
 		<swiper-container
 			id="swiper"
 			class=" w-full fade-in-top"
-			slides-per-view={`${innerWidth < 1070 && innerWidth > 855 ? "3" : innerWidth <= 855 && innerWidth > 570 ? "2" : innerWidth <= 570 ? "1" : "4"}`}
+			slides-per-view={`${innerWidth < 1720 && innerWidth > 1070 ? "4" : innerWidth < 1070 && innerWidth > 855 ? "3" : innerWidth <= 855 && innerWidth > 570 ? "2" : innerWidth <= 570 ? "1" : "5"}`}
 			space-between="10"
 			grab-cursor="true"
 			speed="2000"
