@@ -9,7 +9,7 @@
 <div id="certificate-list" class="md:hidden block w-full">
 	<swiper-container
 		on:swiperslidechange={onSlideChange}
-		class="max-w-72 w-[87%]"
+		class="max-w-72 min-w-2 w-[87%]"
 		effect="cards"
 		grab-cursor="true"
 	>

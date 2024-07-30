@@ -50,10 +50,10 @@
 </script>
 
 <div
-	class="hero  sm:min-h-[calc(100vh)] sm:h-auto h-[80%] mb-40 sm:mb-0 bg-base-100"
+	class="w-full lg:h-auto lg:mt-[4vh] lg:mb-[10vh] sm:mt-0 sm:mb-[20vh] my-[20vh] bg-base-100"
 	id="certificate"
 >
-	<div class="hero-content rounded-md  max-w-[95%] px-10 flex lg:flex-row flex-col w-full py-6">
+	<div class="hero-content rounded-md lg:max-w-[95%] lg:px-10 flex lg:flex-row flex-col w-full py-6">
 		<div class="lg:w-[75%] p-2 rounded-md  w-full flex lg:justify-between justify-center">
 			<div class="flex flex-col items-center">
 				<h1
@@ -71,7 +71,7 @@
 			<CertificateCard />
 		</div>
 
-		<div class="lg:w-full sm:shadow-xl h-full sm:border bg-base-200 border-base-content p-5 rounded-md w-[85%]">
+		<div class="lg:w-full sm:shadow-xl h-full sm:border md:bg-base-200 border-base-content p-5 rounded-md w-[85%]">
 
 			<div
 			id="certificate-list"

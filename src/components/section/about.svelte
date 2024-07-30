@@ -47,7 +47,7 @@
 </script>
 
 <div class="hero h-auto md:min-h-full my-9" id="about">
-	<div class="hero-content sm:max-w-[95%] shadow-xl rounded-md sm:border border-base-content  ">
+	<div class="hero-content sm:max-w-[95%] sm:shadow-xl rounded-md sm:border border-base-content  ">
 		<div class="text-justify md:pe-9  rounded-md border-base-content sm:p-5">
 			<h1
 				class="text-4xl sm:text-5xl font-bold text-center md:text-start"
