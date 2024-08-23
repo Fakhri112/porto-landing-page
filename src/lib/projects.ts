@@ -28,7 +28,7 @@ let webProjectList = [
 	{
 		name: "Yahoot!",
 		description: "A live quiz interactive game like kahoot! and quizzes",
-		link: "https://yahootgame.c1.is/",
+		link: "https://yahootgame.whf.bz/",
 		github: "https://github.com/Fakhri112/yahoot",
 		image: yahoot,
 		tech: ["Laravel", "React", "Tailwind", "Peerjs", "PostgreSQL"],
