@@ -70,7 +70,7 @@
 					February 2022 - July 2022
 				</p>
 				<p></p>
-				<ol class="list-decimal px-7 text-justify">
+				<ol class="list-disc px-7 text-justify">
 					<li> Learned critical thinking, logic, and languange skills</li>
 					<li> Learned WordPress and related tools such as Elementor Builder and theme settings.</li>
 					<li> Learned and practiced SEO using the YoastSeo plugin.</li>
@@ -91,7 +91,7 @@
 				>
 					Aug 2022 - Dec 2022
 				</p>
-				<ol class="list-decimal px-7 text-justify">
+				<ol class="list-disc px-7 text-justify">
 					<li>Built learning management system platform (stufast.id) using Codeigniter 4</li>
 					<li>Actively participate in the development team's efforts to create an online learning platform system from scratch.</li>
 					<li>
