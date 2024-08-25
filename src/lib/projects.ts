@@ -15,6 +15,7 @@ import shortlink from "$lib/image/project-img/api/shortlink.png";
 import sudokuSolver from "$lib/image/project-img/api/sudoku-solver.png";
 import personalLibrary from "$lib/image/project-img/api/personal-library.png";
 import issueTracker from "$lib/image/project-img/api/issue-tracker.png";
+import cafeteria from "$lib/image/project-img/api/cafeteria.png";
 
 let webProjectList = [
 	{
@@ -108,11 +109,11 @@ let apiProjectList = [
 		tech: ["Node.js", "Express.js", "MongoDB"],
 	},
 	{
-		name: "File Metadata",
-		description: "A FreeCodeCamp Back-End Development Project",
-		github: "https://github.com/Fakhri112/freecodecamp-backend-project",
-		image: fileMetadata,
-		tech: ["Node.js", "Express.js"],
+		name: "Cafeteria Management",
+		description: "Backend API to Manage Cafeteria with Different User Role",
+		github: "https://github.com/Fakhri112/cafeteria-api",
+		image: cafeteria,
+		tech: ["Node.js", "Nest.js", "TypeORM", "PostgreSQL"],
 	},
 	{
 		name: "URL Shortener",

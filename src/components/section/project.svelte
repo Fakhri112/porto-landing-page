@@ -48,7 +48,7 @@
 	});
 </script>
 
-<div id="project" class="flex lg:mx-7 flex-col rounded-md mt-5  md:mb-20 justify-center items-center">
+<div id="project" class="flex lg:mx-7 flex-col rounded-md lg:pt-11 mt-5  md:mb-20 justify-center items-center">
 	<div class="hero rounded-t-md  border-b-0 bg-base-100 sm:mb-0 mb-5 pt-4" >
 		<div class="px-10 flex flex-col w-full">
 			<div

@@ -52,8 +52,8 @@ const techIcon = [
 		name: "Codeigniter",
 	},
 	{
-		classIcon: "devicon-nodejs-plain",
-		name: "Node.js",
+		classIcon: "devicon-nestjs-plain",
+		name: "Nest.js",
 	},
 	{
 		classIcon: "devicon-express-original",

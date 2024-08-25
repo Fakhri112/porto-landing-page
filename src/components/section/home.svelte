@@ -1,5 +1,6 @@
 <script>
 	import cv from "$lib/cv_fakhri.pdf";
+	import cv_id from "$lib/cv_fakhri_id.pdf";
 </script>
 
 <div class="hero h-full w-full bg-base-200" id="home">
@@ -12,6 +13,17 @@
 			Curious explorer of web development, having exceptional experiences with
 			Frontend Development
 		</p>
-		<a href={cv} class="btn btn-outline">Download CV</a>
+		<div class="flex justify-between items-center mb-4">
+		  <p class="font-semibold ">Download CV</p>	
+		  <div class="sm:flex hidden gap-x-3">
+			<a href={cv} class="btn btn-outline rounded-md">EN</a>
+			<a href={cv_id} class="btn btn-outline rounded-md">ID</a>
+		  </div>
+		</div>
+		<hr class="border-neutral hidden sm:block hidden">
+		<div class="flex sm:hidden gap-x-3 mt-3">
+			<a href={cv} class="btn btn-outline rounded-md">EN</a>
+			<a href={cv_id} class="btn btn-outline rounded-md">ID</a>
+		</div>
 	</div>
 </div>

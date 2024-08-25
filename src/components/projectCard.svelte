@@ -10,7 +10,7 @@
 <swiper-slide class="max-w-96 mb-8">
 	<div class={`card sm:h-auto  border border-base-content shadow-xl`}>
 		<figure class="relative">
-			<img src={image} alt="yahoot" />
+			<img src={image} alt="" />
 
 			<div class="absolute right-2 bottom-2 flex items-start gap-x-2">
 				{#if github}

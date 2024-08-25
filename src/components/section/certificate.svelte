@@ -50,7 +50,7 @@
 </script>
 
 <div
-	class="w-full lg:h-auto lg:mt-[4vh] lg:mb-[10vh] sm:mt-0 sm:mb-[20vh] my-[20vh] bg-base-100"
+	class="w-full lg:h-auto lg:mt-[23vh] lg:mb-[10vh] sm:mt-0 sm:mb-[20vh] my-[20vh] bg-base-100"
 	id="certificate"
 >
 	<div class="hero-content rounded-md lg:max-w-[95%] lg:px-10 flex lg:flex-row flex-col w-full py-6">
