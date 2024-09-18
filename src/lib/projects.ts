@@ -6,11 +6,10 @@ import lezhealty from "$lib/image/project-img/lezhealty.png";
 import landingPage from "$lib/image/project-img/landing-page.png";
 import spaceTourism from "$lib/image/project-img/space-tourism.png";
 import markdownPreviewer from "$lib/image/project-img/markdown-previewer.png";
-import drumMachine from "$lib/image/project-img/drum-machine.png";
+import wordleNative from "$lib/image/project-img/wordle-native.png";
 import calculator from "$lib/image/project-img/calculator.png";
 import pomodoroClock from "$lib/image/project-img/pomodoro-clock.png";
 import exerciseTracker from "$lib/image/project-img/api/exercise-tracker.png";
-import fileMetadata from "$lib/image/project-img/api/file-metadata.png";
 import shortlink from "$lib/image/project-img/api/shortlink.png";
 import sudokuSolver from "$lib/image/project-img/api/sudoku-solver.png";
 import personalLibrary from "$lib/image/project-img/api/personal-library.png";
@@ -41,6 +40,13 @@ let webProjectList = [
 		github: "https://github.com/Fakhri112/bluenote",
 		image: bluenote,
 		tech: ["Next.js", "Firebase", "Bootstrap"],
+	},
+	{
+		name: "Wordle Mobile",
+		description: "Wordle Game for Android",
+		github: "https://github.com/Fakhri112/wordle-native",
+		image: wordleNative,
+		tech: ["React Native", "Expo", "React Navigation", "Nativewind"],
 	},
 	{
 		name: "Stufast.id",
@@ -80,14 +86,6 @@ let webProjectList = [
 		link: "https://fakhri112.github.io/fc-markdown-previewer/",
 		github: "https://github.com/Fakhri112/fc-markdown-previewer",
 		image: markdownPreviewer,
-		tech: ["React", "Typescript", "Vite", "Tailwind"],
-	},
-	{
-		name: "Drum Machine",
-		description: "A FreeCodeCamp Front-End Development Project",
-		link: "https://fakhri112.github.io/fc-drum-machine/",
-		github: "https://github.com/Fakhri112/fc-drum-machine",
-		image: drumMachine,
 		tech: ["React", "Typescript", "Vite", "Tailwind"],
 	},
 	{

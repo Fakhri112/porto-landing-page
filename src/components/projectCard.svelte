@@ -1,4 +1,6 @@
 <script lang="ts">
+	export let index: number
+	export let transparent: boolean
 	export let name: string;
 	export let description: string | undefined;
 	export let link: string | undefined;
@@ -7,7 +9,7 @@
 	export let tech: string[];
 </script>
 
-<swiper-slide class="max-w-96 mb-8">
+<swiper-slide class="max-w-96 mb-8" style={`${index != 100 ? ` opacity: 0; animation: fade-in-top 300ms ${index * 70}ms ease-out forwards` : ''} ${transparent ? 'opacity: 0;' : '' }`}>
 	<div class={`card sm:h-auto  border border-base-content shadow-xl`}>
 		<figure class="relative">
 			<img src={image} alt="" />

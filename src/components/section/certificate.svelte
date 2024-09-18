@@ -46,6 +46,9 @@
 				scrub: true,
 			},
 		});
+		setTimeout(() => {
+			ScrollTrigger.refresh()
+		}, 1000);
 	});
 </script>
 

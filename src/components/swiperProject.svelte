@@ -4,7 +4,7 @@
 	import ProjectCard from "./projectCard.svelte";
 	import gsap from "gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
+	export let innerWidth = 0;
 	export let webProject = true;
 	if (typeof window !== "undefined") {
 		gsap.registerPlugin(ScrollTrigger);
@@ -36,12 +36,11 @@
 				}),
 		});
 	});
-	$: innerWidth = 0;
-	$: innerHeight = 0;
+
 </script>
 
-<svelte:window bind:innerWidth bind:innerHeight />
-<div id="swiper-container" class="mt-2 px-2 w-[97%]">
+
+<div id="swiper-container" class="mt-4 px-2 w-[97%]">
 	{#if webProject}
 		<swiper-container
 			id="swiper"
@@ -57,7 +56,7 @@
 			loop="true"
 		>
 			{#each webProjectList as { name, description, github, image, link, tech }}
-				<ProjectCard {name} {description} {github} {image} {link} {tech} />
+				<ProjectCard {name} {description} {github} {image} {link} {tech} index={100} transparent={false} />
 			{/each}
 		</swiper-container>
 	{:else}
@@ -82,6 +81,8 @@
 					{image}
 					link={undefined}
 					{tech}
+					index={100}
+					transparent={false}
 				/>
 			{/each}
 		</swiper-container>

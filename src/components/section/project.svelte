@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import SwiperProject from "../swiperProject.svelte";
-	let webProject = true;
+	import GridProject from "../gridProject.svelte";
 	import gsap from "gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
+	$: innerWidth = 0
+	let webProject = true;
 	onMount(() => {
 		gsap.set("#project-title-caption", {
 			opacity: 0,
@@ -14,11 +15,13 @@
 			scroller: "#scroll-container",
 			trigger: "#project-title-caption",
 			start: "bottom 80%",
-			onLeaveBack: () =>
+			onLeaveBack: () =>{
 				gsap.to("#project-title-caption", {
 					x: 200,
 					opacity: 0,
-				}),
+				})
+			},
+				
 			onEnter: () =>
 				gsap.to("#project-title-caption", {
 					x: 0,
@@ -47,12 +50,12 @@
 		});
 	});
 </script>
-
+<svelte:window bind:innerWidth />
 <div id="project" class="flex lg:mx-7 flex-col rounded-md lg:pt-11 mt-5  md:mb-20 justify-center items-center">
 	<div class="hero rounded-t-md  border-b-0 bg-base-100 sm:mb-0 mb-5 pt-4" >
 		<div class="px-10 flex flex-col w-full">
 			<div
-				class="w-full flex md:justify-between md:flex-row flex-col items-center"
+				class="w-full flex md:justify-between md:flex-row flex-col items-end"
 			>
 				<div
 					class="flex flex-col text-center md:text-start"
@@ -76,5 +79,11 @@
 			</div>
 		</div>
 	</div>
-	<SwiperProject {webProject} />
+	{#if innerWidth > 1719}
+	<GridProject {webProject}/>
+	{:else}
+	<SwiperProject {webProject} {innerWidth} />
+	{/if}
+	
+
 </div>
