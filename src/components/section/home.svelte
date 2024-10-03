@@ -1,6 +1,6 @@
 <script>
-	import cv from "$lib/cv_fakhri.pdf";
-	import cv_id from "$lib/cv_fakhri_id.pdf";
+	import cv from "$lib/pdf/cv_fakhri.pdf";
+	import cv_id from "$lib/pdf/cv_fakhri_id.pdf";
 </script>
 
 <div class="hero h-full w-full bg-base-200" id="home">

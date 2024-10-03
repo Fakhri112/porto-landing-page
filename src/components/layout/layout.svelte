@@ -2,7 +2,7 @@
 	import { onMount } from "svelte";
 	import { register } from "swiper/element/bundle";
 	import "swiper/css";
-
+	import loading from "$lib/image/loading.gif"
 	import gsap from "gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 	import FloatingDarkModeToggle from "../floatingDarkModeToggle.svelte";
@@ -11,6 +11,7 @@
 
 	let darkMode = false;
 	let bodyElement: HTMLElement;
+	let mounted = false
 
 	if (typeof window !== "undefined") {
 		gsap.registerPlugin(ScrollTrigger);
@@ -20,6 +21,9 @@
 		bodyElement = document.querySelector("html") as HTMLElement;
 		register();
 		ScrollTrigger.refresh();
+		setTimeout(() => {
+			mounted = true
+		}, 1000);
 	});
 
 	$: if (bodyElement) {
@@ -38,14 +42,20 @@
 	/>
 </svelte:head>
 
-<div class="h-screen p-4 md:pt-8 pt-10 overflow-auto flex flex-col relative">
-	<NavbarDesktop />
-	<NavbarMobile bind:darkMode />
-	<div
-		id="scroll-container"
-		class="overflow-y-auto overflow-x-hidden h-full relative border border-2 border-neutral scroll-smooth"
-	>
-		<FloatingDarkModeToggle bind:darkMode />
-		<slot></slot>
+{#if mounted}
+	<div class="h-screen p-4 md:pt-8 pt-10 overflow-auto flex flex-col relative fade-in-left">
+		<NavbarDesktop />
+		<NavbarMobile bind:darkMode />
+		<div
+			id="scroll-container"
+			class="overflow-y-auto overflow-x-hidden h-full relative border border-2 border-neutral scroll-smooth"
+		>
+			<FloatingDarkModeToggle bind:darkMode />
+			<slot></slot>
+		</div>
 	</div>
-</div>
+	{:else}
+	<div class="h-screen grid place-items-center">
+		<img src={loading} alt="">
+	</div>
+{/if}

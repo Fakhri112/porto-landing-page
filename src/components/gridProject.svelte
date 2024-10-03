@@ -4,6 +4,7 @@
 	import ProjectCard from "./projectCard.svelte";
     import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
     import gsap from "gsap";
+	import { showSection } from "./state/state";
     export let webProject: boolean 
     let focus = false
     onMount(() => {
@@ -22,9 +23,9 @@
 					stagger: 0.2,
 				})
 				focus = true
-				setTimeout(() => {
-					ScrollTrigger.refresh()
-				}, 2000);
+				// setTimeout(() => {
+				// 	ScrollTrigger.refresh()
+				// }, 2000);
 			},
 			onLeaveBack: () =>{
 				gsap.to("#grid-project", {
@@ -42,8 +43,11 @@
 	});
 
     $: webProject, setTimeout(() => {
-        ScrollTrigger.refresh()
-    }, 500);
+		showSection.set(false)
+		setTimeout(() => {
+			showSection.set(true)
+		}, 150);
+	}, 50);
 
 
 </script>

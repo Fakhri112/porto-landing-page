@@ -39,7 +39,6 @@
 			ScrollTrigger.create({
 				scroller: "#scroll-container",
 				trigger: el,
-
 				start: "-200 80%",
 				end: "-200 center",
 				onLeaveBack: () =>
@@ -72,7 +71,7 @@
 			</p>
 		</div>
 		<div
-			class="shadow-xl items-center justify-center grid lg:h-[60vh] md:grid-cols-5 grid-cols-4 justify-items-center  border border-base-content bg-base-100  rounded-md lg:w-[100vh] md:w-[100%] w-[95%] gap-y-3 py-3"
+			class="shadow-xl items-center justify-center grid lg:h-[60vh] md:grid-cols-5 grid-cols-4 justify-items-center  border border-base-content bg-base-100  rounded-md lg:w-[100vh] md:w-[95%] w-[95%] gap-y-3 py-3"
 		>
 			{#each techIcon as { classIcon, name }}
 				<TechIcon {name} {classIcon} />

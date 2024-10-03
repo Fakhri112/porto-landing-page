@@ -4,8 +4,10 @@
 	import GridProject from "../gridProject.svelte";
 	import gsap from "gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+	import { clickedToggleWebProject } from "../state/state";
 	$: innerWidth = 0
 	let webProject = true;
+
 	onMount(() => {
 		gsap.set("#project-title-caption", {
 			opacity: 0,
@@ -49,13 +51,21 @@
 				}),
 		});
 	});
+
+	
+
+	const handleToggle = (bool: boolean) => {
+		if (!$clickedToggleWebProject) clickedToggleWebProject.set(true)
+		webProject = bool
+	}
+
 </script>
 <svelte:window bind:innerWidth />
 <div id="project" class="flex lg:mx-7 flex-col rounded-md lg:pt-11 mt-5  md:mb-20 justify-center items-center">
 	<div class="hero rounded-t-md  border-b-0 bg-base-100 sm:mb-0 mb-5 pt-4" >
 		<div class="px-10 flex flex-col w-full">
 			<div
-				class="w-full flex md:justify-between md:flex-row flex-col items-end"
+				class="w-full flex md:justify-between md:flex-row flex-col items-center"
 			>
 				<div
 					class="flex flex-col text-center md:text-start"
@@ -69,11 +79,11 @@
 				<div id="toggle-web-api">
 					<button
 						class={`btn btn-outline rounded ${webProject ? "btn-active" : ""}`}
-						on:click={() => (webProject = true)}>Web</button
+						on:click={() => handleToggle(true)}>Web</button
 					>
 					<button
 						class={`btn btn-outline rounded ${!webProject ? "btn-active" : ""}`}
-						on:click={() => (webProject = false)}>API</button
+						on:click={() =>  handleToggle(false)}>API</button
 					>
 				</div>
 			</div>

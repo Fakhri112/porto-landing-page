@@ -4,8 +4,10 @@
 	import CertificateGrid from "../certificateGrid.svelte";
 	import gsap from "gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+	import { showSection, clickedToggleWebProject } from "../state/state";
 	let certifTarget = "";
-	onMount(() => {
+	let element: HTMLDivElement | null = null
+	const gsapAnimation = () => {
 		const certificateTitleCaption = gsap.utils.toArray(
 			"#certificate-title-caption",
 		);
@@ -19,6 +21,7 @@
 				scroller: "#scroll-container",
 				trigger: el,
 				start: "bottom 80%",
+				scrub: true,
 				onEnter: () =>
 					gsap.to(el, {
 						x: 0,
@@ -35,9 +38,13 @@
 			});
 		});
 
-		gsap.from("#certificate-list", {
+		gsap.set("#certificate-list", {
 			x: 230,
 			opacity: 0,
+		});
+		gsap.to("#certificate-list", {
+			x: 0,
+			opacity: 1,
 			scrollTrigger: {
 				scroller: "#scroll-container",
 				trigger: "#certificate-list",
@@ -46,42 +53,55 @@
 				scrub: true,
 			},
 		});
+
+		
+		
+	}
+	onMount(() => {
 		setTimeout(() => {
-			ScrollTrigger.refresh()
-		}, 1000);
+			gsapAnimation()
+		}, 480);
 	});
+
+	$: $showSection, setTimeout(() => {
+		 if (element && $clickedToggleWebProject) gsapAnimation()
+	}, 800);
+
+
 </script>
 
-<div
-	class="w-full lg:h-auto lg:mt-[23vh] lg:mb-[10vh] sm:mt-0 sm:mb-[20vh] my-[20vh] bg-base-100"
-	id="certificate"
->
-	<div class="hero-content rounded-md lg:max-w-[95%] lg:px-10 flex lg:flex-row flex-col w-full py-6">
-		<div class="lg:w-[75%] p-2 rounded-md  w-full flex lg:justify-between justify-center">
-			<div class="flex flex-col items-center">
-				<h1
-					class="text-4xl sm:text-5xl font-bold"
-					id="certificate-title-caption"
+{#if $showSection}
+	<div
+		bind:this={element}
+		class={`relative w-full lg:h-auto lg:mt-[23vh] lg:mb-[10vh] sm:mt-0 sm:mb-[20vh] my-[20vh] bg-base-100`}
+		id="certificate">
+			<div class="hero-content rounded-md lg:max-w-[95%] lg:px-10 flex lg:flex-row flex-col w-full py-6">
+				<div class="lg:w-[75%] p-2 rounded-md  w-full flex lg:justify-between justify-center">
+					<div class="flex flex-col items-center">
+						<h1
+							class="text-4xl sm:text-5xl font-bold"
+							id="certificate-title-caption"
+						>
+							Certificate
+						</h1>
+						<p class="py-2" id="certificate-title-caption">
+							Where passion meets expertise
+						</p>
+					</div>
+				</div>
+				<div id="certificate-list" class="md:hidden block w-full">
+					<CertificateCard />
+				</div>
+
+				<div class="lg:w-full sm:shadow-xl h-full sm:border md:bg-base-200 border-base-content p-5 rounded-md w-[85%]">
+
+					<div
+					id="certificate-list"
+					class={`md:grid hidden grid-cols-3 h-full grid-row grid-rows-3 ${certifTarget ? '' : 'gap-4'}`}
 				>
-					Certificate
-				</h1>
-				<p class="py-2" id="certificate-title-caption">
-					Where passion meets expertise
-				</p>
-			</div>
-		</div>
-		<div id="certificate-list" class="md:hidden block w-full">
-			<CertificateCard />
-		</div>
-
-		<div class="lg:w-full sm:shadow-xl h-full sm:border md:bg-base-200 border-base-content p-5 rounded-md w-[85%]">
-
-			<div
-			id="certificate-list"
-			class={`md:grid hidden grid-cols-3 h-full grid-row grid-rows-3 ${certifTarget ? '' : 'gap-4'}`}
-		>
-			<CertificateGrid bind:certifTarget />
-		</div>
-		</div>
+					<CertificateGrid bind:certifTarget />
+				</div>
+				</div>
+		    </div>
 	</div>
-</div>
+{/if}
