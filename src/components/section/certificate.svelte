@@ -21,8 +21,6 @@
 				scroller: "#scroll-container",
 				trigger: el,
 				start: "bottom 80%",
-			
-				markers: true,
 				onEnter: () =>
 					gsap.to(el, {
 						x: 0,

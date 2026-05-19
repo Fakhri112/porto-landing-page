@@ -5,7 +5,6 @@
 		e.preventDefault();
 		e.stopImmediatePropagation();
 		let target = e.currentTarget as HTMLElement;
-
 		if (target.id == "") return;
 		if (certifTarget == target.id) {
 			return (certifTarget = "");
@@ -15,8 +14,9 @@
 
 	const handleSurprise = () => {
 		let surprise = document.getElementById("surprise") as any;
-		surprise?.swiper?.slideNext();
+		surprise?.swiper?.slideNext()
 	};
+	
 </script>
 
 {#each certificateList as { image, id, credentialLink }, index}
@@ -28,9 +28,10 @@
 			class="opacity-0 rounded h-full w-full"
 			on:click={handleSurprise}
 		>
-			<swiper-container
+			{#if certifTarget == ''}
+				<swiper-container
 				id="surprise"
-				class={`w-full h-full rounded ${certifTarget != "" ? "hidden" : ""}`}
+				class={`w-full h-full rounded`}
 				loop="true"
 				effect="flip"
 			>
@@ -42,6 +43,7 @@
 					<img src={image} alt="" />
 				</swiper-slide>
 			</swiper-container>
+			{/if}
 		</button>
 	{:else}
 		<button
@@ -53,7 +55,7 @@
 					? `hover:brightness-75 shadow-xl col-span-1 row-span-1 opacity-0 h-full`
 					: certifTarget != id && certifTarget != ""
 						? "hidden"
-						: "col-span-3 row-span-3 swing-in-top-fwd "
+						: "col-span-3 row-span-3 swing-in-top-fwd"
 			} ${index > 3 ? "border border-neutral rounded" : ""} relative`}
 			{id}
 			on:click={handleChangeCertifTarget}
